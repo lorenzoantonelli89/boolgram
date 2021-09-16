@@ -1,0 +1,51 @@
+#all-like{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 350px;
+    overflow-y: scroll;
+
+    #top-like{
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+        display: flex;
+        b{
+            flex-grow: 1;
+            text-align: center;
+        }
+        i{
+            cursor: pointer;
+        }
+    }
+    ul{
+        list-style: none;
+        padding: 20px 20px;
+
+        li{
+            @include flex(row, center, space-between);
+            margin-bottom: 20px;
+
+            div{
+                @include flex(row, center, flex-start);
+                margin-right: 70px;
+                img{
+                    @include circle(40px, 40px);
+                    margin-right: 10px;
+                }
+            }
+            button{
+                background-color: $blue;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                border-color: white;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,99 @@
+#skel-block-left{
+    width: 60%;
+
+    #skel-top-left{
+        border: 1px solid lightgray;
+        margin-bottom: 50px;
+        position: relative;
+
+        img{
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+        }
+
+        ul{
+            list-style: none;
+            padding: 40px 50px 15px 20px;
+            
+            li{
+                display: inline-block;
+                @include circle(50px, 50px);
+                background-color: lightslategray;
+                margin-right: 20px;
+            }
+        }
+    }
+    #skel-central-left{
+        height: 600px;
+        border: 1px solid lightgray;
+
+        .skel-info-post{
+            @include flex(row, center, flex-start);
+            height: 20%;
+
+            .skel-img{
+                @include circle(30px, 30px);
+                background-color: lightslategray;
+                margin-right: 25px;
+                margin-left: 20px;
+            }
+            .skel-auth{
+                width: 100px;
+                height: 10px;
+                background-color: lightslategray;
+            }
+        }
+        .skel-post{
+            height: 80%;
+            background-color: lightskyblue;
+        }
+    }
+}
+#skel-block-right{
+    width: 40%;
+
+    #skel-container-suggestion{
+        margin: 20px 25px;
+    
+        #skel-sug-seeAll{
+            @include flex(row, center, space-between);
+            margin-bottom: 20px;
+    
+            span{
+                font-size: 20px;
+            }
+            span:first-child{
+                color: lightgray;
+            }
+        }
+    
+        ul{
+            list-style: none;
+    
+            li{
+                @include flex(row, center, space-between);
+                margin-bottom: 25px;
+                
+                div{
+                    @include flex(row, center, flex-start);
+                    .skel-img{
+                        @include circle(30px, 30px);
+                        background-color: lightslategray;
+                        margin-right: 25px;
+                        margin-left: 20px;
+                    }
+                    .skel-username{
+                        width: 60px;
+                        height: 10px;
+                        background-color: lightslategray;
+                    }
+                }
+                .skel-follow{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#container-suggestion{
+    margin: 20px 25px;
+
+    #sug-seeAll{
+        @include flex(row, center, space-between);
+        margin-bottom: 20px;
+
+        span{
+            font-size: 20px;
+        }
+        span:first-child{
+            color: lightgray;
+        }
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            @include flex(row, center, space-between);
+            margin-bottom: 25px;
+
+            div{
+                @include flex(row, center, flex-start);
+                img{
+                    @include circle(40px, 40px);
+                    margin-right: 20px;
+                }
+            }
+            .follow{
+                color: $blue;
+            }
+        }
+    }
+}

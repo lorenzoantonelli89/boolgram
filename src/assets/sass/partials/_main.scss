@@ -1,0 +1,5 @@
+#container-main{
+    @include centering;
+    @include flex(row, flex-start, center);
+    margin-top: 40px;
+}

@@ -1,0 +1,14 @@
+#container-profile{
+    @include flex(row, center, space-between);
+    margin: 10px 25px 80px 25px;
+
+    img{
+        @include circle(60px, 60px);
+    }
+    div{
+        text-align: center;
+    }
+    span{
+        color: $blue;
+    }
+}

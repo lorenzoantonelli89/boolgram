@@ -1,0 +1,20 @@
+@import 'partials/variable';
+@import 'partials/nav';
+@import 'partials/main';
+@import 'partials/left-block';
+@import 'partials/right-block';
+@import 'partials/stories';
+@import 'partials/posts';
+@import 'partials/profile';
+@import 'partials/suggestions';
+@import 'partials/all-like';
+@import 'partials/skeleton';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+

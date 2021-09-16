@@ -1,0 +1,53 @@
+#navbar{
+    border-bottom: 1px solid lightgray;
+
+    #container-nav{
+        @include flex(row, center, space-between);
+        @include centering;
+        padding: 10px 0;
+
+        img{
+            width: 100px;
+        }
+    
+        input{
+            height: 25px;
+        }
+        /* begin rules for center placeholder */
+        ::-webkit-input-placeholder {
+            text-align: center;
+        }
+         
+        :-moz-placeholder { /* Firefox 18- */
+            text-align: center;  
+        }
+         
+        ::-moz-placeholder {  /* Firefox 19+ */
+            text-align: center;  
+        }
+         
+        :-ms-input-placeholder {  
+            text-align: center; 
+        }
+        /* end rules */
+        #container-link{
+            @include flex(row, center, center);
+            list-style: none;
+    
+            li{
+                padding-left: 15px;
+    
+                a{
+                    color: black;
+    
+                    i{
+                        font-size: 18px;
+                    }
+                    img{
+                        @include circle(30px, 30px);
+                    }
+                }
+            }
+        }
+    }
+}

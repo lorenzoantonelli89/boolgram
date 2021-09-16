@@ -1,0 +1,46 @@
+#container-stories{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-align: center;
+
+    #slider-stories{
+        position: relative;
+        list-style: none;
+        @include flex(row, center, center);
+        padding: 40px 10px;
+
+        i{
+            cursor: pointer;
+        }
+        
+        #container-stories-scroll{
+            @include flex(row, center, center);
+            list-style: none;
+            width: 655px;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+
+            .stories{
+                padding-right: 5px;
+                padding-left: 5px;
+                min-width: 110px;
+                
+                div{
+                    @include flex(column, center, center);
+                    
+                    img{
+                        @include circle(70px, 70px); 
+                        border: 2px solid #d53a9d;
+                        padding: 2px;
+                    }
+                    span{
+                        padding-top: 5px;
+                    }
+                }
+            }
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+    }
+}
